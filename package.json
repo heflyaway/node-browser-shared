@@ -1,0 +1,17 @@
+{
+    "name": "node-browser-shared",
+    "version": "0.1.0",
+    "repository": "https://github.com/heflyaway/node-browser-shared.git",
+    "author": "hehao <hehao@kuaishou.com>",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "browser": "dist/browser/index.js",
+    "scripts": {
+        "build": "tsc -p tsconfig.json"
+    },
+    "devDependencies": {
+        "@ks/eslint-config-game": "^1.1.9-alpha.3",
+        "@types/node": "^14.0.20",
+        "typescript": "^3.9.6"
+    }
+}

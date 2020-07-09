@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "baseUrl": "packages",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": false,
+        // "noUnusedLocals": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitThis": false,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": false,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node"
+        ],
+    },
+    "include": ["src/**/*"]
+}
