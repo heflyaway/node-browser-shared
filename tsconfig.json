@@ -24,5 +24,8 @@
             "node"
         ],
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/node/**/*",
+        "src/*.ts"
+    ]
 }

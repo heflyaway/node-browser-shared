@@ -5,13 +5,22 @@
     "author": "hehao <hehao@kuaishou.com>",
     "license": "MIT",
     "main": "dist/index.js",
-    "browser": "dist/browser/index.js",
+    "browser": "build/index.esm.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-        "build": "tsc -p tsconfig.json"
+        "build": "yarn clean && yarn build:node && yarn build:browser",
+        "build:node": "tsc -p tsconfig.json",
+        "build:browser": "rollup --config rollup.config.js",
+        "clean": "rimraf dist build"
     },
     "devDependencies": {
         "@ks/eslint-config-game": "^1.1.9-alpha.3",
+        "@rollup/plugin-commonjs": "^13.0.0",
+        "@rollup/plugin-node-resolve": "^8.1.0",
         "@types/node": "^14.0.20",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.21.0",
+        "rollup-plugin-typescript2": "^0.27.1",
         "typescript": "^3.9.6"
     }
 }
