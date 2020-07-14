@@ -1,6 +1,6 @@
 {
     "name": "node-browser-shared",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "repository": "https://github.com/heflyaway/node-browser-shared.git",
     "author": "hehao <hehao@kuaishou.com>",
     "license": "MIT",
