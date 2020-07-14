@@ -1,5 +1,5 @@
 # node-browser-shared
-shared in node and browser
+shared in node and browser, suit for SSR environment;
 
 ## install
 ```shell
